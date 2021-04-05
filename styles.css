@@ -176,29 +176,26 @@ p {
     width: 95vw;
   }
 }
+
 main {
   min-height: 100vh;
   display: grid;
   place-items: center;
 }
 
-.section-masthead {
+#section-masthead {
   border-radius: var(--radius);
   box-shadow: var(--light-shadow);
   transition: var(--transition);
-  padding: 3rem;
-  margin: 0 auto;
-  max-width: 50rem;
-  margin: 3rem;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 .section-masthead:hover {
   box-shadow: var(--dark-shadow);
 }
 
 .masthead h1 {
-  font-size: 4rem;
-  line-height: 5rem;
+  font-size: 3rem;
+  line-height: 4rem;
   letter-spacing: 0.3rem;
   background: linear-gradient(var(--clr-grey-3), var(--clr-green-light));
   -webkit-text-fill-color: transparent;
@@ -826,12 +823,6 @@ main.elixir button {
 Recipi 
 ===============
 */
-header {
-  text-align: center;
-  padding-bottom: 2rem;
-
-}
-
 main.recipi {
   min-height: 100vh;
   display: grid;
@@ -845,7 +836,7 @@ main.recipi {
   padding: 3rem;
   margin: 0 auto;
   max-width: 50rem;
-  margin: 3rem;
+  margin: 1rem;
   background: var(--clr-white);
   color: var(--clr-grey-1);
 }
@@ -861,8 +852,7 @@ main.recipi {
 .section-recipi h2 {
   font-size: 5rem;
   text-align: center;
-  margin: auto;
-  padding-bottom: 1rem;
+  margin: 2rem;
   line-height: 5rem;
   background: linear-gradient(var(--clr-primary-4), var(--clr-green-light));
   -webkit-text-fill-color: transparent;
@@ -883,8 +873,11 @@ main.recipi {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.home-button {
-  margin: auto;
+#refresh {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.refresh-button {
   padding: 1rem;
   line-height: 1rem;
   text-decoration: none;
@@ -902,12 +895,11 @@ main.recipi {
   box-shadow: #111;
   transition: box-shadow 0.6s;
 }
-.home-button:hover {
+.refresh-button:hover {
   box-shadow: 0 0 0 0 #ec3700, 0.5rem 0.5rem 30px #13092d;
 }
-.home-button:after {
+.refresh-button:after {
   content: '';
-  top: 2px;
   right: 2px;
   bottom: 2px;
   left: 2px;
@@ -1101,22 +1093,20 @@ main.foodi {
 }
 
 .ui-widget-header {
-    background: var(--clr-grey-3)!important;
-    color: #fff;
-    font-weight: bold;
+  background: var(--clr-grey-3) !important;
+  color: #fff;
+  font-weight: bold;
 }
 
 .roll {
-  color: var(--clr-primary-1)!important;
+  color: var(--clr-primary-1) !important;
   outline: none;
   text-decoration: underline;
   padding: 2px 1px 0 !important;
 }
 
 .roll:hover {
-  color: var(--clr-primary-11)!important;
+  color: var(--clr-primary-11) !important;
   text-decoration: none;
   background-color: var(--clr-black) !important;
 }
-
-

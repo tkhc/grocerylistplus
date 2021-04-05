@@ -164,7 +164,7 @@ function getRecipeButton() {
 }
 
 function handleHomeButton() {
-  $('header').on('click', '.home-button', function (event) {
+  $('aside').on('click', '.refresh-button', function (event) {
     store.searching = false
     store.responseSaved = false
     render()
