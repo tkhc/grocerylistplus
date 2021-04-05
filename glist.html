@@ -4,53 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Final Project | GroceryList+</title>
+  <title>GroceryList+ | GList</title>
   <!-- font-awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
   <!-- styles -->
   <link rel="stylesheet" href="styles.css" />
-  <!-- script for formbutton -->  
-  <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
-  <script>
-    window.formbutton = window.formbutton || function () { (formbutton.q = formbutton.q || []).push(arguments) };
-
-    /*formbutton*/
-    formbutton("create", {
-      action: "https://formspree.io/f/xrgrzbeb",
-      title: "How can I help you?",
-      fields: [
-        {
-          name: "name",
-          type: "text",
-          label: "Name",
-          required: true,
-          placeholder: "name"
-        },
-        {
-          type: "email",
-          label: "Email:",
-          name: "email",
-          required: true,
-          placeholder: "your@email.com"
-        },
-        {
-          type: "textarea",
-          label: "Message:",
-          name: "message",
-          placeholder: "I will get back to you as soon as possible.",
-        },
-        { type: "submit" }
-      ],
-      styles: {
-        title: {
-          backgroundColor: "lightblue"
-        },
-        button: {
-          backgroundColor: "lightblue"
-        }
-      }
-    });
-  </script>
 </head>
 
 <body>
@@ -80,13 +38,25 @@
 			</ul>
     </div>
   </nav>
-  <main class="masthead">
-    <div class="section-masthead">
-    <h1>Welcome to GroceryList+</h1>
-    <p>GL+ contains an enhanced grocery list app <b>(GList)</b>, a one-stop food resources page <b>(Foodi)</b>, a feature-rich recipe search app <b>(Recipi)</b>, and a fun random cocktail generator app <b>(Elixir)</b>. You will never forget any item on your grocery trip again.</p>
-    <div class="flex align-midde align-center"><a class="button glow-button" href="glist.html">Enter</a></div>
-  </a>
-
+  <main class="hero">
+    <section class="section-center">
+      <!-- form -->
+      <h1 id="glist">GList</h1>
+      <form class="grocery-form">
+        <p class="alert"></p>
+        <h2>Grocery List</h2>
+        <p>Add item using the enter button. You can also edit and delete item from the list.</p>
+        <div class="form-control">
+          <input type="text" id="grocery" placeholder="e.g. Kale" aria-label="text" />
+          <button type="submit" class="submit-btn">submit</button>
+        </div>
+      </form>
+      <!-- list -->
+      <div class="grocery-container">
+        <div class="grocery-list"></div>
+        <button class="clear-btn">clear items</button>
+      </div>
+    </section>
   </main>
   <!--footer-->
   <footer>
@@ -106,7 +76,6 @@
       </li>
       <a href="../index.html">| back to Homepage <i class="fas fa-home fa-lg"></i></a>
     </ul>
-    
   </footer>
 
   <!-- javascript -->

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>GroceryList+ | Foodi</title>
+	<!-- font-awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+	<!-- styles -->
+	<link rel="stylesheet" href="styles.css" />
+	<!-- jQuery -->
+	<link href="../_css/jquery-ui.min.css" rel="stylesheet">
+	<script src="../_js/jquery.min.js"></script>
+	<script src="../_js/jquery-ui.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('#tabContainer').tabs({
+				show: 'fadeIn',
+				hide: 'fadeOut'
+			});
+			var hash = location.hash;
+			if (hash) {
+				$('#tabContainer').tabs("load", hash)
+			}
+		}); // end ready
+	</script>
+</head>
+
+<body>
+	<nav>
+		<div class="nav-center">
+			<!-- nav header -->
+			<div class="nav-header">
+				<a href="index.html"><img src="logo.png" class="logo" alt="to home" /><span
+						style="display: none">Home</span></a>
+				<button class="nav-toggle">
+					<i class="fas fa-bars"></i>
+				</button>
+			</div>
+			<!-- links -->
+			<ul class="links">
+				<li>
+					<a href="index.html">GList</a>
+				</li>
+								<li>
+					<a href="foodi.html">Foodi</a>
+				</li>
+				<li>
+					<a href="recipi.html">Recipi</a>
+				</li>
+				<li>
+					<a href="elixir.html">Elixir</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<main class="foodi">
+		<section class="section-foodi">
+			<h1>Foodi</h1>
+			<p>Learn more about food and what to get on your next grocery trip.</p>
+			<div id="tabContainer">
+				<ul>
+					<li><a href="#panel1">Food Guide</a></li>
+					<li><a href="#panel2">Local Food</a></li>
+					<li><a href="#panel3">Food Waste</a></li>
+				</ul>
+				<!-- panel 1 -->
+				<div id="panel1">
+					<h2>Seasonal Food Guide</h2>
+					
+					<a class="roll" href="https://www.seasonalfoodguide.org/" target="_blank">Find
+						What's in Season Near
+						You</a>
+					<p>Seasonal fruits and vegetables produced on local farms are often fresher, as they do not
+						require long distances for transport. Also, unlike out of season produce which is harvested
+						early
+						in order to be shipped and distributed to your local retail store, crops picked at their peak of
+						ripeness are also better tasting and full of flavor.</p>
+
+					<a class="roll" href="https://foodprint.org/eating-sustainably/real-food-encyclopedia/" target="_blank">Real
+						Food Encyclopedia</a>
+					<p>Get real about your food with over 200 entries, our comprehensive encyclopedia helps you understand the foodprint of each food listed. You’ll learn how sustainable (or unsustainable!) each food is, what to look for
+					when shopping for it and even tips on how to cook it.</p>
+				</div>
+				<!-- panel 2 -->
+				<div id="panel2">
+					<h2>Buy Local, Eat Local</h2>
+					<a class="roll" href="https://www.ams.usda.gov/local-food-directories/farmersmarkets" target="_blank">Find Your
+						Local Farmer's Market</a>
+					<p>Most produce can be found at your local farmers’ market,
+						through local Community Supported Agriculture (CSA) programs operating in your area and at
+						restaurants and businesses committed to seasonal, local food.</p>
+						<p>Maintained by the Agricultural Marketing Service, the Directory is designed to provide customers with convenient access to information about farmers market listings to include: market locations, directions, operating times, product offerings, accepted forms of payment, and more.</p>
+
+				</div>
+				<!-- panel 3 -->
+				<div id="panel3">
+					<h2>Reduce Food Waste</h2>
+					<a class="roll" href="https://www.usda.gov/foodwaste/faqs" target="_blank">Learn more about food waste.</a>
+					<p>In the United States, food waste is estimated at between 30-40 percent of the food supply. This estimate, based on estimates from USDA’s Economic Research Service of 31 percent food loss at the retail and consumer levels, corresponded to approximately 133 billion pounds and $161 billion worth of food in 2010. This amount of waste has far-reaching impacts on society and our planet.</p>
+					<a class="roll" href="https://www.epa.gov/recycle/reducing-wasted-food-home" target="_blank">Reducing wasted food at home.</a>
+					<p>There are many ways to reduce food waste. You can start by planning. If planning fails, work on storage and be thrify - cook and bake like a pro, using any ingredients in your fridge. Lastly, if you cannot reduce food waste, divert it from landfills by practicing composting and/or donating to food banks.</p>
+				</div>
+			</div>
+			</div>
+			</div>
+		</section>
+	</main>
+	<!--footer-->
+	<footer>
+		<p>Final Project for Info 3020 © 2021 Terrence Chan</p>
+		<!-- social media -->
+		<ul class="social-icons">
+			<li>
+				<a href="https://www.linkedin.com/in/terrencekhchan/" target="_blank" rel="noopener noreferrer">Linkedin
+					<i class="fab fa-linkedin fa-lg"></i>
+				</a>
+			</li>
+			<p></p>
+			<li>
+				<a href="https://www.github.com/tkhc" target="_blank" rel="noopener noreferrer">Github
+					<i class="fab fa-github fa-lg"></i>
+				</a>
+			</li>
+			<a href="../index.html">| back to Homepage <i class="fas fa-home fa-lg"></i></a>
+		</ul>
+	</footer>
+	</div>
+	  <!-- javascript -->
+  <script src="app.js"></script>
+</body>
+
+</html>
