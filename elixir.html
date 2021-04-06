@@ -23,50 +23,55 @@
         </button>
       </div>
       <!-- links -->
-			<ul class="links">
-				<li>
-					<a href="glist.html">GList</a>
-				</li>
-								<li>
-					<a href="foodi.html">Foodi</a>
-				</li>
-				<li>
-					<a href="recipi.html">Recipi</a>
-				</li>
-				<li>
-					<a href="elixir.html">Elixir</a>
-				</li>
-			</ul>
+      <ul class="links">
+        <li>
+          <a href="glist.html">GList</a>
+        </li>
+        <li>
+          <a href="foodi.html">Foodi</a>
+        </li>
+        <li>
+          <a href="recipi.html">Recipi</a>
+        </li>
+        <li>
+          <a href="elixir.html">Elixir</a>
+        </li>
+      </ul>
     </div>
   </nav>
+
+
   <main class="elixir">
     <div id="age-verify">
       <div class="window">
         <div id="age-text">
           <span class="title">Are you over 21?</span>
-          <span>You must be 21 to visit Elixir.</span>
         </div>
         <div id="under-age" class="hiddenText">
           <span class="title">Sorry!</span>
           <span>Come back again when you turn 21 :)</span>
         </div>
         <button id="yes" class="yes">Yes | Welcome</button>
-        <button id="no" class="no"><a href="index.html">No | Home</a></button>
+        <a href="index.html"><button id="no" class="no">No | Home</button></a>
       </div>
     </div>
     <div class="section-elixir">
-      <div class="row">
+      <div class="row text-center">
         <h1>Elixir</h1>
-        <h2>Don't forget about the cocktail.</h2>
-
-        <p style="text-align: center;">Get a cocktail recipe by clicking below</p>
-        <button class="flex glowButton" id="get_drink">Get a drink 🍸</button>
-        <div id="drink" class="row"></div>
+        <button class="glowButton" id="get_drink">Get a drink 🍸</button>
       </div>
+      <div id="drink" class="row drink"></div>
+    </div>
   </main>
-  <!--footer-->
+
+
+ <!--footer-->
   <footer>
-    <p>Final Project for Info 3020 © 2021 Terrence Chan</p>
+    <p>
+      Terrence Chan 2021 ©
+      <a href="https://www.tkhc.live" target="_blank" rel="noopener noreferrer">TkhcHub <i
+          class="fas fa-home fa-lg"></i></a>
+    </p>
     <!-- social media -->
     <ul class="social-icons">
       <li>
@@ -74,19 +79,18 @@
           <i class="fab fa-linkedin fa-lg"></i>
         </a>
       </li>
-      <p></p>
+
       <li>
         <a href="https://www.github.com/tkhc" target="_blank" rel="noopener noreferrer">Github
           <i class="fab fa-github fa-lg"></i>
         </a>
       </li>
-      <a href="../index.html">| back to Homepage <i class="fas fa-home fa-lg"></i></a>
     </ul>
   </footer>
 
   <!-- javascript -->
   <script src="script.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 </body>
 
 </html>

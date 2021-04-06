@@ -86,7 +86,7 @@ function createDrink(drink) {
   drinkContainer.innerHTML = `
     <div>
       <div class="columns five">
-        <img src="${drink.strDrinkThumb}" alt="drink immg" /> 
+        <img src="${drink.strDrinkThumb}" id="drinkimg" alt="drink img" /> 
     </div>
       <div class="columns five">
         <h4>${drink.strDrink}</h4>

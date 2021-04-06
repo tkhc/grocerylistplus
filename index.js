@@ -20,6 +20,7 @@ let store = {
 function returnHomePage(responseJson) {
   return `
 <section class="section-recipi">
+    <div style="padding:2rem";>
     <h2>Recipi</h2>
     <h3>Need some last-minute idea on your grocery trip? </h3>
     <p>This app offers up to 9 recipes per search. In addition to ingredients display, it will also provide calories count and nutritional information of the dish.</p>
@@ -28,7 +29,8 @@ function returnHomePage(responseJson) {
         <input class="form-elem" type="text" name="search-term" id="search-term" required placeholder="ex: garlic, italian">
         <input class="form-elem" type="submit" id="search-submit">
     </form>
-    <div>
+    </div>
+    <div style="padding:2rem";>
         <p>Not a recipe person? You can also keep hitting refresh button for picture inspiration.</p>
         <img class="hero-img" src="${responseJson.image}" alt="hero-image">
     </div>
